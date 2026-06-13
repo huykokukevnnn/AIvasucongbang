@@ -1,104 +1,77 @@
 extends ./layout/layout-default.pug
 
 block content
-	// Header
-	header.masthead
-		.container.d-flex.h-100.align-items-center
-			.row
-				h1 Survival of the Best Fit
-	// About Section
-	section.about-section.text-center
+	section.resources-section.text-center
 		.container
 			.row
-				.col-lg-8.mx-auto
-					a.btn.btn-info.mx-auto.play-button(href='./game/', role='button') Bắt Đầu Chơi
-					h4.clickMe (Trò chơi mất khoảng 6 phút)
-				.col-lg-8.mx-auto
-					h1 Thiên Vị Của Máy Móc Tồn Tại Khắp Nơi
-					.cute-box
-						h2 Phần mềm có thực sự trung lập?
-						p
-							b Survival of the Best Fit
-							|  là một trò chơi giáo dục về thiên vị tuyển dụng trong AI. Chúng tôi muốn giải thích cách việc lạm dụng AI có thể khiến máy móc kế thừa những định kiến của con người và làm gia tăng sự bất bình đẳng. Phần lớn các cuộc tranh luận về AI coi nó như một mối đe dọa áp đặt lên chúng ta, thay vì là thứ mà chúng ta có quyền kiểm soát. Chúng tôi muốn thay đổi điều đó bằng cách giúp mọi người hiểu công nghệ và yêu cầu trách nhiệm giải trình cao hơn từ những người đang xây dựng các hệ thống phần mềm này.
-						p
-							| Built by
-							a(href='http://gaborcsapo.com/') Gabor Csapo
-							| ,
-							a(href='https://www.linkedin.com/in/kimjihyun/') Jihyun Kim
-							| ,
-							a(href='https://www.mklasinc.com/') Miha Klasinc
-							| , and
-							a(href='https://aliaelkattan.com') Alia ElKattan
-							| .
-
-						p
-							| Supported by the
-							a(href='https://blog.mozilla.org/blog/2018/10/24/keeping-ai-accountable-with-science-fiction-documentaries-and-doodles-plus-225000/') Creative Media Award
-							|  from
-							a(href='https://foundation.mozilla.org/en/') Mozilla Foundation
-							| .
-
-						p
-							| Featured on
-							a(href="https://fortune.com/2019/07/16/confronting-bias-in-a-i-raceahead/") Fortune
-							| ,
-							a(href="https://medium.com/read-write-participate/would-an-algorithm-hire-you-or-ignore-your-resume-db315a873c91") Mozilla
-							| , and
-							a(href="https://bdtechtalks.com/2019/07/08/ai-bias-survival-of-the-best-fit/") Tech Talks.
-	// Signup Section
-	section#signup.signup-section.about-section
-		.container
+				.col-lg-9.mx-auto
+					h1 Hiểu Về Thiên Vị Thuật Toán
+					img.img-fluid.img-asset(src='./img-website/table-asset.png')
+			.row.table-of-contents.mt-5
+				.col-lg-4.col-md-6.col-xs-8.mx-auto
+					h3.text-center Mục Lục
+					ul.list-unstyled.mt-3
+						li
+							a(href="#reading1") Phần 1: Đằng sau công nghệ
+						li
+							a(href="#reading2") Phần 2: Phần mềm công bằng
+						li
+							a(href="#reading3") Phần 3: Những bước tiến tới
+						li
+							a(href="#reading4") Thêm Tài Nguyên
 			.row
-				.col-md-12.col-lg-8.mx-auto.text-center.padding-top
-					h1 Tham Gia
+				.col-lg-9.mx-auto
+					.cute-box#reading1(onclick='boxClicked("#reading1")')
+						h2 Phần 1: Đằng sau công nghệ
+						p Bạn không cần phải là kỹ sư để đặt câu hỏi về việc công nghệ đang ảnh hưởng đến cuộc sống của chúng ta như thế nào. Mục tiêu không phải là để mọi người đều trở thành nhà khoa học dữ liệu hay kỹ sư học máy, mặc dù lĩnh vực này chắc chắn cần <a href='https://medium.com/@AINowInstitute/gender-race-and-power-in-ai-a-playlist-2d3a44e43d3b'>nhiều sự đa dạng hơn</a>, mà là để có đủ nhận thức để tham gia vào cuộc thảo luận và đặt ra những câu hỏi quan trọng.
 
-					.cute-box
-						h2
-							| Chia sẻ dự án này
+						iframe(src="https://giphy.com/embed/oSjA9HcU0iIXm" width="480" height="408" frameBorder="0" class="giphy-embed" allowFullScreen)
 
-						h3.mb-3
+						p <a href='https://www.youtube.com/watch?v=z-EtmaFJieY'> Học máy (Machine learning - ML)</a>, là một ứng dụng của trí tuệ nhân tạo (AI) liên quan đến việc dạy máy tính cách đưa ra quyết định bằng cách học từ lượng dữ liệu khổng lồ. AI có thể là một công cụ mạnh mẽ giúp đưa ra quyết định nhanh chóng, nhưng việc ra quyết định "tự động" của nó không có nghĩa là nó luôn chính xác, khách quan hoặc công bằng.
 
-							.share-button
-								<div class="fb-share-button" data-href="https://survivalofthebestfit.com" data-layout="button" data-size="large">
-								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsurvivalofthebestfit.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+						p Mặc dù Survival of the Best Fit minh họa cách mà việc ra quyết định tự động có thể bị thiên vị, nhưng các công cụ dựa trên Mô hình Ngôn ngữ Lớn (LLM) hiện đại có thể làm được nhiều điều hơn là chỉ phân loại ứng viên là tốt hay xấu. Chúng có thể tóm tắt kinh nghiệm làm việc của bạn thành một sơ yếu lý lịch, tạo ra các mô tả công việc chân thực, sàng lọc sơ yếu lý lịch và thậm chí tiến hành các cuộc phỏng vấn ban đầu. Những công cụ này cũng dựa trên cùng một khuôn khổ, nơi các thuật toán được đào tạo trên các tập dữ liệu khổng lồ.
 
-							.share-button
-								<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Can you hire without bias? Play this ~6 min game to find out" data-url="https://survivalofthebestfit.com" data-via="sotbf_" data-related="sotbf_" data-show-count="false">Tweet</a>
-								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						p Khi xây dựng các hệ thống học máy, chúng ta nên hỏi: những quyết định này dựa trên số liệu nào, và chúng ta có thể buộc ai chịu trách nhiệm? Với học máy, điều đó trở nên phức tạp, bởi vì sau khi chương trình được đào tạo trên lượng dữ liệu lịch sử khổng lồ, việc tìm ra lý do tại sao một quyết định cụ thể được đưa ra không còn đơn giản nữa. Đó là cái mà người ta gọi là <a href="https://www.technologyreview.com/s/604087/the-dark-secret-at-the-heart-of-ai/">vấn đề Hộp Đen (Black Box problem)</a>.
 
-							.share-button
-								<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-								<script type="IN/Share" data-url="https://survivalofthebestfit.com"></script>
+						iframe(src="https://giphy.com/embed/l2JegI3GShJoyHEwo" width="480" height="408" frameBorder="0" class="giphy-embed" allowFullScreen)
 
-						p
-							| Hãy giúp chúng tôi chia sẻ dự án này để nhiều người hơn có thể hiểu về thiên vị thuật toán.
+						p Công nghệ nên giúp chúng ta tiến về phía trước, chứ không phải lặp lại những sai lầm của quá khứ. Ví dụ, nếu dữ liệu chúng ta sử dụng đại diện cho một lịch sử khi chỉ những người thuộc một chủng tộc, giới tính hoặc tầng lớp nhất định mới được hệ thống ưu ái, thì chúng ta đang dạy phần mềm của mình điều gì?
+
+					.cute-box.clickable#reading2(onclick='boxClicked("#reading2")')
+						h2 Phần 2: Phần mềm công bằng
+						h4 Nhấp vào tôi để xem thêm GIF...
+						p Đây là một vấn đề phức tạp với một giải pháp phức tạp. Và chỉ riêng công nghệ thì không đủ.
+
+						iframe(src="https://giphy.com/embed/XI3CMlr4RnaXS" width="480" height="408" frameBorder="0" class="giphy-embed" allowFullScreen)
+
+						p Tùy thuộc vào dữ liệu được đưa vào phần mềm học máy, điều đó có thể có nghĩa là các quyết định mà nó tạo ra có thể tuân theo những định kiến tiêu cực, được mô phỏng theo những bất công tồn tại từ lâu, hoặc loại trừ các nhóm người nhất định. Chúng tôi muốn đảm bảo rằng công nghệ hoạt động cho tất cả mọi người và không lặp lại những bất công và bất bình đẳng lịch sử theo <a href="https://points.datasociety.net/systemic-algorithmic-harms-e00f99e72c42">những cách có hệ thống</a>. Công bằng là chủ quan và thiên vị là phức tạp. Chúng tôi không mong đợi các kỹ sư phần mềm sẽ giải quyết được tất cả - đó là lý do tại sao chúng tôi nghĩ bạn nên là một phần của cuộc trò chuyện. Xây dựng phần mềm không chỉ là một thách thức kỹ thuật thuần túy khi nó liên quan đến nhiều ý nghĩa xã hội, chính trị và kinh tế. Dù liên quan đến thiên vị thuật toán hay những cách khác mà công nghệ đang ảnh hưởng đến cuộc sống của chúng ta, chúng ta cần có khả năng đặt câu hỏi và yêu cầu các nhà phát triển chịu trách nhiệm.
+
+						iframe(src="https://giphy.com/embed/xBqoUR9qjWPCtUMhu9" width="480" height="408" frameBorder="0" class="giphy-embed" allowFullScreen)
+
+						p Đôi khi chúng ta phải hỏi: làm thế nào để phần mềm này không áp bức hoặc loại trừ? Việc sử dụng công nghệ này có phù hợp không? Nếu một giải pháp học máy không cho phép chúng ta nghi ngờ kết quả của nó, liệu các chính phủ và tập đoàn có nên sử dụng việc ra quyết định tự động để tự giải phóng bản thân khỏi trách nhiệm không?
+
+					.cute-box.clickable#reading3(onclick='boxClicked("#reading3")')
+						h2 Phần 3: Những bước tiến tới
+						h4 Nhấp vào tôi để trở thành chuyên gia về sự công bằng...
+
+						p Chúng ta không có một giải pháp tắt nào để "khắc phục" thiên vị thuật toán, nhưng chúng ta có rất nhiều người tuyệt vời đang nghiên cứu về nó. Chúng tôi không muốn phát minh lại bánh xe, mà muốn khuyến khích bạn ủng hộ và mở rộng những nỗ lực đang diễn ra. Việc xây dựng công nghệ có đạo đức, công bằng không bắt đầu hay dừng lại ở thiên vị thuật toán, đó là lý do tại sao chúng tôi hy vọng công chúng sẽ được thông báo tốt hơn về cách công nghệ ảnh hưởng đến cuộc sống của chúng ta nói chung.
+
+						<iframe src="https://giphy.com/embed/DNpWCDNx03IXlETSac" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+						p Chúng ta cần sự hợp tác giữa các cá nhân và tổ chức trong nhiều lĩnh vực khác nhau để tiến những bước dài trong việc xây dựng công nghệ công bằng hơn và để bắt những người phát triển nó phải chịu trách nhiệm. Đây là lý do tại sao chúng tôi muốn các vấn đề về đạo đức công nghệ có thể tiếp cận được với những người có thể chưa từng tham gia lớp học khoa học máy tính trước đây, nhưng vẫn có rất nhiều điều để đóng góp cho cuộc trò chuyện.
+
+						p Có nhiều góc độ để tiếp cận công nghệ công bằng, bao gồm nhận thức và vận động công chúng tốt hơn, <a href='https://blog.usejournal.com/from-principles-to-action-how-do-we-implement-tech-ethics-d59aebb05ed8?sk=d01ca6f6d827b44414d34730dd920ab2'>buộc các công ty công nghệ chịu trách nhiệm</a>, thu hút nhiều tiếng nói đa dạng hơn và phát triển <a href='https://www.fastcompany.com/90355969/want-to-fix-big-tech-change-what-classes-are-required-for-a-computer-science-degree'>các chương trình giáo dục khoa học máy tính có ý thức xã hội hơn</a>.
+
+						<iframe src="https://giphy.com/embed/JUALKCjmb9SkrYrx46" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+						p Nếu bạn muốn tìm hiểu thêm về thiên vị thuật toán hoặc tác động của công nghệ đối với xã hội của chúng ta, hãy xem danh sách đọc của chúng tôi bên dưới. Sau đó, chúng tôi hy vọng bạn sẽ đặt câu hỏi, nói lên ý kiến của mình và ủng hộ lời kêu gọi về một công nghệ mang lại lợi ích cho xã hội của chúng ta.
 
 
-					.cute-box
-						h2
-							| Bạn phát hiện lỗi (bug)?
-							i.fas.fa-bug.mb-2
-						p
-							| Đây là một dự án mã nguồn mở và chúng tôi rất trân trọng những phản hồi cũng như đóng góp từ cộng đồng.
 
-						p
-							| Giúp chúng tôi cải thiện bằng cách tạo một 
-							a(href="https://github.com/survivalofthebestfit/survivalofthebestfit/issues/new") issue trên Github
-							|  hoặc gửi pull request. Bạn cũng có thể
-							a(href="https://twitter.com/sotbf_") tweet
-							|  cho chúng tôi những ý tưởng và góp ý của bạn!
+					.cute-box.clickable#reading4(onclick='boxClicked("#reading4")')
+						h2 Bạn Muốn Đọc Thêm?
+						h4 Nhấp vào tôi để xem chúng tôi lấy tất cả thông tin này từ đâu...
 
-					//- .cute-box
-					//- 	h2
-					//- 		i.far.fa-paper-plane.mb-2
-					//- 		|  Mailing  List
-					//- 	h3 Sign up to stay in touch with us
-					//- 	// Begin Mailchimp Signup Form
-					//- 	// <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-					//- 	form#mc-embedded-subscribe-form.form-inline.d-flex(action='https://survivalofthebestfit.us20.list-manage.com/subscribe/post?u=d47d856a71ec3eacf35291a17&id=c5012f3579', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-					//- 		// <div id="mc_embed_signup_scroll">
-					//- 		input#mce-EMAIL.form-control.flex-fill.mr-0.mr-sm-2.mb-3.mb-sm-0(type='email', value='', name='EMAIL', placeholder='Email Address', required='')
-					//- 		// real people should not fill this in and expect good things - do not remove this or risk form bot signups
-					//- 		div(style='position: absolute; left: -5000px;', aria-hidden='true')
-					//- 			input(type='text', name='b_d47d856a71ec3eacf35291a17_c5012f3579', tabindex='-1', value='')
-					//- 		button.btn.btn-primary.mx-auto(type='submit') Subscribe
+						<iframe src="https://giphy.com/embed/eCwAEs05phtK" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+						p Đừng lo, chúng tôi đã chuẩn bị sẵn... <a href='https://github.com/survivalofthebestfit/survivalofthebestfit/wiki/Reading-List'>Đây</a> là những bài đọc yêu thích của chúng tôi về chủ đề thiên vị thuật toán và công nghệ có đạo đức.
