@@ -1,4 +1,5 @@
 // base styles
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 html, body {
   width: 100%;
@@ -11,7 +12,7 @@ body {
   top: 0;
   left: 0;
   background-color: color(bg-yellow);
-  font-family: 'VT323', Inter, Roboto, monospace;
+  font-family: 'Space Mono', 'Inter', 'Roboto', monospace;
   &.training-background {
     background-color: color(rose-light);
   }
@@ -21,7 +22,7 @@ body {
 button {
   outline: none;
   border: none;
-  font-family: 'VT323', Inter, Roboto, monospace;
+  font-family: 'Space Mono', 'Inter', 'Roboto', monospace;
   
   &:hover, &:active {
     outline: none;

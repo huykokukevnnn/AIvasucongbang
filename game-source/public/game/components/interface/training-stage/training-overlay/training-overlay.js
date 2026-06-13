@@ -23,11 +23,11 @@ export default class extends UIBase {
         this.elapsedTime = 0;
         this.timePerUpdate = null;
         this.progressMessages = [
-            'Loading CVs...',
-            'Loading %company% dataset...',
-            'Processing data...',
-            'Optimizing algorithm...',
-            'Finished!',
+            'Đang tải CV...',
+            'Đang tải dữ liệu của %company%...',
+            'Đang xử lý dữ liệu...',
+            'Đang tối ưu hóa thuật toán...',
+            'Hoàn thành!',
         ];
         this.init();
     }

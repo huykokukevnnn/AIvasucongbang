@@ -60,7 +60,7 @@ export default class extends UIBase {
 
     updateCounter() {
         const peopleToHire = this.hiresQuota - this.hiresNum;
-        const hireText = peopleToHire === 1 ? `${peopleToHire} person` : `${peopleToHire} people`;
+        const hireText = `${peopleToHire} người`;
         this.$hireGoalEl.find('.TaskTimer-value').text(hireText);
         if (peopleToHire === 0) this.showTaskFeedback({stageCompleted: true});
     }
@@ -100,7 +100,7 @@ export default class extends UIBase {
     }
 
     showTaskFeedback({stageCompleted}) {
-        const feedbackText = stageCompleted ? 'Task completed' : 'Task failed';
+        const feedbackText = stageCompleted ? 'Hoàn thành' : 'Thất bại';
         [this.$timer, this.$hireGoalEl].map((el) => el.addClass(CLASSES.IS_INACTIVE));
         this.$feedbackEl.removeClass(CLASSES.IS_INACTIVE);
         this.$feedbackEl.find('.TaskTimer-value').text(feedbackText);
