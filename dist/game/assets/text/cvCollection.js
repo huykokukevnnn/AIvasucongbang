@@ -8,19 +8,19 @@ import CLASSES from '~/public/game/controllers/constants/classes';
 const cvCollection = {
     cvFeatures: [
         {
-            name: 'Skill',
+            name: 'Kỹ năng',
             class: CLASSES.CV_SKILL,
         },
         {
-            name: 'School Prestige',
+            name: 'Danh tiếng trường',
             class: CLASSES.CV_SCHOOL,
         },
         {
-            name: 'Work Experience',
+            name: 'Kinh nghiệm làm việc',
             class: CLASSES.CV_WORK,
         },
         {
-            name: 'Ambition',
+            name: 'Tham vọng',
             class: CLASSES.CV_AMBITION,
         },
     ],

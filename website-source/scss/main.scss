@@ -11,13 +11,13 @@
 
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Inter, Roboto, sans-serif;
   background-color: $yellow-washed;
 }
 
 
 h1 {
-  font-family: 'VT323', monospace;
+  font-family: 'VT323', Inter, Roboto, monospace;
   font-size: 3.5rem;
   text-transform: uppercase;
   margin-top: 5rem;
@@ -32,7 +32,7 @@ h1 {
 }
 
 h2, h3 {
-  font-family: "Nunito"
+  font-family: "Nunito", Inter, Roboto, sans-serif;
 }
 
 .cute-box {

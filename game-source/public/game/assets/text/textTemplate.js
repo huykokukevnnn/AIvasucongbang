@@ -2,32 +2,32 @@ const english = {
     // texts displayed in the html
     header: {
         title: 'Survival of the Best Fit',
-        subtitle: 'How AI hires like humans',
+        subtitle: 'Cách AI tuyển dụng giống con người',
     },
     about: {
-        aboutBody: 'Survival of the Best Fit is a game to demonstrate how blind use of AI in hiring can further perpetuate human bias. In this simulation, users will act as recruiters at a fast-growing company. To reduce costs and maximize output, they would use a new, obscure AI system to replace human recruiters, only to realize that this creates a snowball of problems.\nThis is a project by Gabor Csapo, Jihyun Kim, Miha Klasinc, and Alia ElKattan',
+        aboutBody: 'Survival of the Best Fit là một trò chơi để chứng minh làm thế nào việc sử dụng AI một cách mù quáng trong tuyển dụng có thể tiếp tục kéo dài những thiên vị của con người. Trong mô phỏng này, người dùng sẽ đóng vai trò là nhà tuyển dụng tại một công ty phát triển nhanh. Để giảm chi phí và tối đa hóa sản lượng, họ sẽ sử dụng một hệ thống AI mới mẻ để thay thế con người, chỉ để nhận ra rằng điều này tạo ra một chuỗi các vấn đề.\nĐây là dự án của Gabor Csapo, Jihyun Kim, Miha Klasinc, và Alia ElKattan',
     },
  
     //resources page
  
     resources: {
-        title: 'Machines, Bias, and Fairness',
-        aboutBiasTitle: 'How does \'machine bias\' work?',
+        title: 'Máy móc, Thiên vị và Sự công bằng',
+        aboutBiasTitle: 'Thiên vị máy móc hoạt động như thế nào?',
         aboutBias: 'xx\n xxx',
     },
  
     // texts displayed during the game
     titleStage: {
-        header: 'Congratulations!',
-        instruction: 'You\’ve just secured 1 million dollars from Orange Valley ventures. Ready to grow your new startup?',
+        header: 'Chúc mừng!',
+        instruction: 'Bạn vừa nhận được khoản đầu tư 1 triệu đô la từ quỹ Orange Valley Ventures. Bạn đã sẵn sàng phát triển startup mới của mình chưa?',
         responses: [
-            'Start Game',
+            'Bắt Đầu Chơi',
         ],
     },
     instructions: {
         manual: {
-            click: 'Click on candidates to see their CVs',
-            eval: 'Click Accept to hire a candidate, or Reject to see more new applicants.',
+            click: 'Nhấp vào ứng viên để xem CV của họ',
+            eval: 'Nhấp Chấp nhận (Accept) để tuyển ứng viên, hoặc Loại bỏ (Reject) để xem thêm người mới.',
         },
         ml: {
  
@@ -35,44 +35,44 @@ const english = {
     },
  
     smallOfficeStage: {
-        subject: 'Our investment in your startup',
-        messageFromVc: 'We are excited to see you grow the startup. It\'s a competitive market so hire only the best.',
-        responses: ['Let\'s start hiring'],
+        subject: 'Khoản đầu tư của chúng tôi vào startup của bạn',
+        messageFromVc: 'Chúng tôi rất hào hứng khi thấy bạn phát triển startup này. Đây là một thị trường cạnh tranh nên hãy chỉ tuyển những người giỏi nhất.',
+        responses: ['Bắt đầu tuyển dụng thôi'],
         hiringGoal: 3,
     },
  
     mediumOfficeStage: {
-        subject: 'Good start',
-        messageFromVc: 'However, for more funding you\’ll need to hire faster, so pay attention to the clock!',
+        subject: 'Khởi đầu tốt đấy',
+        messageFromVc: 'Tuy nhiên, để có thêm vốn, bạn sẽ cần tuyển dụng nhanh hơn, vì vậy hãy chú ý đến đồng hồ!',
         responses: [
-            'I\'ll hire faster.',
-            'Hmm, okay.',
+            'Tôi sẽ tuyển nhanh hơn.',
+            'Hmm, được thôi.',
         ],
         hiringGoal: 5,
         duration: 45
     },
  
     largeOfficeStage: {
-        subject: 'Next investment round...',
-        messageFromVc: 'Good effort, but you need to hire even faster to get more funding. Can you pull this off?',
+        subject: 'Vòng gọi vốn tiếp theo...',
+        messageFromVc: 'Nỗ lực tốt đấy, nhưng bạn cần tuyển nhanh hơn nữa để nhận thêm vốn. Bạn có làm được không?',
         responses: [
-            'Of course!',
-            'I\'m a bit overwhelmed.',
+            'Tất nhiên rồi!',
+            'Tôi hơi bị quá tải một chút.',
         ],
         hiringGoal: 8,
-        previousStageFailed: 'You ran out of time. The investors want to see results, you\'ll have to hire even more people next month!',
+        previousStageFailed: 'Bạn đã hết thời gian. Các nhà đầu tư muốn thấy kết quả, bạn sẽ phải tuyển thêm nhiều người hơn nữa vào tháng tới!',
         duration: 45
  
     },
  
     mlTransition: {
-        subject: 'Using AI?',
-        messageFromVc: 'It\'s just too competitive here in Orange Valley...Can you talk to your software engineers to speed things up? I heard AI solves all problems nowadays.',
+        subject: 'Sử dụng AI?',
+        messageFromVc: 'Cạnh tranh ở Thung lũng Orange đang quá khốc liệt... Bạn có thể bảo các kỹ sư phần mềm của mình đẩy nhanh tốc độ lên được không? Tôi nghe nói dạo này AI giải quyết được mọi vấn đề đấy.',
         responses: [
-            'Sure, we can automate it away!',
-            'Hmm, I will email the engineers.',
+            'Chắc chắn rồi, chúng ta có thể tự động hóa nó!',
+            'Hmm, tôi sẽ email cho các kỹ sư.',
         ],
-        previousStageFailed: 'This is clearly not working. Talk to your software engineers to see if they can speed things up. Maybe AI is the solution.',
+        previousStageFailed: 'Cách làm hiện tại rõ ràng không ổn. Hãy trao đổi với các kỹ sư phần mềm xem họ có thể đẩy nhanh tốc độ không. Có lẽ AI là giải pháp.',
     },
     // add transition here. e-mail from INVESTOR says:  We’ve made good progress, but the faster we grow, the more profit we’ll make. I suggest you use an automated program to help with hiring. Check with the software development team?
  
@@ -80,56 +80,56 @@ const english = {
     conversation: [
         {
             dialogue_step: 1,
-            text: 'You asked us how we can hire faster. So we built a hiring algorithm using <i>machine learning</i>. Basically, we will teach a computer to hire like you, but way faster!',
+            text: 'Bạn đã hỏi chúng tôi cách để tuyển dụng nhanh hơn. Vì vậy, chúng tôi đã xây dựng một thuật toán tuyển dụng bằng <i>học máy (machine learning)</i>. Về cơ bản, chúng ta sẽ dạy máy tính cách tuyển người giống như bạn, nhưng nhanh hơn rất nhiều!',
             answer_choice: [
                 {
-                    text: 'How does that work?',
+                    text: 'Nó hoạt động thế nào?',
                     response: '',
                 },
                 {
-                    text: 'That\'s great.',
-                    response: 'Perfect! ',
+                    text: 'Tuyệt quá.',
+                    response: 'Hoàn hảo! ',
  
                 },
             ],
         },
         {
             dialogue_step: 2,
-            text: 'First, the algorithm will read through past applicants\' CVs and whether they were hired or not. It will then learn what makes a candidate good or bad by <u>copying your hiring decision process</u>!',
+            text: 'Đầu tiên, thuật toán sẽ đọc qua CV của các ứng viên trước đây và xem họ có được nhận hay không. Sau đó nó sẽ học cách phân biệt ứng viên tốt và xấu bằng cách <u>sao chép quá trình ra quyết định của bạn</u>!',
             answer_choice: [
                 {
-                    text: 'A machine will think like me?',
-                    response: 'Thinking is a strong word. ',
+                    text: 'Một cỗ máy sẽ suy nghĩ giống tôi sao?',
+                    response: 'Suy nghĩ là một từ hơi quá. ',
                 },
                 {
-                    text: 'Works for me ',
-                    response: 'We have to be careful though.',
+                    text: 'Nghe hợp lý đấy',
+                    response: 'Dù vậy chúng ta vẫn phải cẩn thận.',
                 },
             ],
         },
         {
             dialogue_step: 3,
-            text: 'It’s impossible for the program to know good or bad candidates without human input - we first need to give it <u>a lot of data</u> to learn from.',
+            text: 'Chương trình không thể tự biết ứng viên nào tốt hay xấu nếu không có con người chỉ dẫn - đầu tiên chúng ta cần cung cấp cho nó <u>rất nhiều dữ liệu</u> để học.',
             answer_choice: [
                 {
-                    text: 'Where do we get the data?',
+                    text: 'Chúng ta lấy dữ liệu ở đâu?',
                     response: '',
                 },
                 {
-                    text: 'How much is a lot?',
+                    text: 'Bao nhiêu là rất nhiều?',
                     response: '',
                 },
             ],
         },
         {
             dialogue_step: 4,
-            text: 'I need your help: can you send me the CVs of all applicants you’ve evaluated so far? <u><b>Click</b> on the file</u> named <i>"cv_all.zip"</i> <span class="desktop__folder-icon"></span> on your desktop',
+            text: 'Tôi cần bạn giúp: bạn có thể gửi cho tôi CV của tất cả những ứng viên mà bạn đã đánh giá từ trước đến nay không? <u><b>Nhấn</b> vào tệp tin</u> tên là <i>"cv_all.zip"</i> <span class="desktop__folder-icon"></span> trên màn hình của bạn',
             file_drag: true,
             answer_choice: [],
         },
         {
             dialogue_step: 5,
-            text: 'Thanks! Machine learning algorithms get more accurate with more data, so here’s what we’ll do: use big tech companies\' data. They have huge applicant records, so we can merge our CVs with theirs and train our model! \n <u>Choose a company</u> you think hires smart people.',
+            text: 'Cảm ơn! Thuật toán học máy sẽ chính xác hơn khi có nhiều dữ liệu, vì vậy chúng ta sẽ làm thế này: sử dụng dữ liệu của các công ty công nghệ lớn. Họ có hồ sơ ứng viên khổng lồ, nên chúng ta có thể gộp CV của mình với của họ để huấn luyện mô hình! \n <u>Hãy chọn một công ty</u> mà bạn cho là chuyên tuyển những người thông minh.',
             dataset_choice: true,
             answer_choice: [
                 'Google',
@@ -139,10 +139,10 @@ const english = {
         },
         {
             dialogue_step: 6,
-            text: 'That\s it! We can now train the algorithm with a lot of past data and put it to use!',
+            text: 'Vậy là xong! Bây giờ chúng ta có thể huấn luyện thuật toán với rất nhiều dữ liệu trong quá khứ và đưa nó vào sử dụng!',
             answer_choice: [
                 {
-                    text: 'Great, let\'s train it!',
+                    text: 'Tuyệt, hãy huấn luyện nó!',
                 },
             ],
         },
@@ -151,40 +151,40 @@ const english = {
         stats_conversation: [
         {
             dialogue_step: 1,
-            text: 'We\'re trying to figure out what\'s wrong with the algorithm.',
+            text: 'Chúng ta đang cố gắng tìm ra thuật toán bị lỗi ở đâu.',
             answer_choice: [
                 {
-                    text: 'Let\'s break down its decisions by orange and blue?',
+                    text: 'Hãy thử chia nhỏ quyết định của nó theo màu cam và xanh?',
                     response: '',
                 },
             ],
         },
         {
             dialogue_step: 2,
-            text: 'Here they are; what do you think?',
+            text: 'Đây rồi; bạn nghĩ sao?',
             stats: true,
             answer_choice: [
                 {
-                    text: 'We\'re rejecting more blue people.',
+                    text: 'Chúng ta đang loại bỏ nhiều người màu xanh hơn.',
                     response: '',
                 },
                 {
-                    text: 'This isn\'t biased.',
-                    response: 'If you look carefully, we have a similar number of equally qualified blue and orange candidates and yet the algorithm accepts a lot more orange. ',
+                    text: 'Điều này không phải là thiên vị.',
+                    response: 'Nếu bạn nhìn kỹ, chúng ta có số lượng ứng viên xanh và cam giỏi ngang nhau, nhưng thuật toán lại nhận nhiều người cam hơn hẳn. ',
                 },
             ],
         },
         {
             dialogue_step: 3,
-            text: 'Let\s find out how! Do you remember how we first trained the algorithm?',
+            text: 'Hãy tìm hiểu xem tại sao! Bạn có nhớ cách chúng ta huấn luyện thuật toán lúc đầu không?',
             answer_choice: [
                 {
-                    text: 'I sent you my decisions for the algorithm to mimic me.',
-                    response: 'Correct. ',
+                    text: 'Tôi đã gửi các quyết định của mình để thuật toán bắt chước.',
+                    response: 'Chính xác. ',
                 },
                 {
-                    text: 'I don\'t care, fix it!',
-                    response: 'The machine was created using your decisions, so I need your help. ',
+                    text: 'Tôi không quan tâm, hãy sửa nó đi!',
+                    response: 'Cỗ máy được tạo ra dựa trên quyết định của bạn, nên tôi cần bạn giúp. ',
                 },
             ],
         },
@@ -204,17 +204,17 @@ const english = {
         // },
         {
             dialogue_step: 5,
-            text: 'Look at our data from manual hiring: ',
+            text: 'Nhìn vào dữ liệu tuyển dụng thủ công của chúng ta này: ',
             stats: true,
             manualStats: true,
             answer_choice: [
                 {
-                    text: 'I hired a lot more orange people.',
-                    response: 'Our algorithm tries to copy our previous hiring, so if you hired more orange people, it \'learns\' to favor them. ',
+                    text: 'Tôi đã nhận nhiều người màu cam hơn.',
+                    response: 'Thuật toán cố gắng sao chép các quyết định trong quá khứ của chúng ta, vì vậy nếu bạn nhận nhiều người màu cam hơn, nó sẽ "học" cách ưu ái họ. ',
                 },
                 {
-                    text: 'I\'m sure I wasn\'t biased!',
-                    response: 'I\'m sure you had good intentions, but we had very few blue applicants in our first stage, and so much less were accepted. The algorithm misinterpreted that as them being unfavorable candidates.',
+                    text: 'Tôi chắc chắn mình không thiên vị!',
+                    response: 'Tôi tin bạn có ý tốt, nhưng chúng ta có rất ít ứng viên xanh ở vòng đầu, và số được nhận lại càng ít hơn. Thuật toán đã hiểu nhầm rằng họ là những ứng viên kém.',
                 },
             ],
         },
@@ -223,21 +223,21 @@ const english = {
             text: ' ',
             answer_choice: [
                 {
-                    text: 'We should have checked the data.',
-                    response: 'Yes, I\'m reading that we need to be more careful the origin and statistical analysis of our data',
+                    text: 'Đáng lẽ chúng ta phải kiểm tra kỹ dữ liệu.',
+                    response: 'Đúng vậy, tôi đang đọc thấy rằng chúng ta cần phải cẩn thận hơn về nguồn gốc và phân tích thống kê của dữ liệu',
                 },
                 {
-                    text: 'But the CVs didn\'t have colors on them!',
-                    response: 'It could indirectly learn other elements that differentiate Orange and Blue People, e.g. Orange people usually attend University College Orange Valley while Blue people attend Bluetown University. ',
+                    text: 'Nhưng trên CV đâu có ghi màu sắc!',
+                    response: 'Nó có thể học gián tiếp từ các yếu tố khác phân biệt người Cam và Xanh, ví dụ: người Cam thường học Đại học Orange Valley còn người Xanh học Đại học Bluetown. ',
                 },
             ],
         },
         {
             dialogue_step: 7,
-            text: 'We should have also checked the quality of the big company dataset you sent me! How am I supposed to understand hiring decisions? I\’m a software engineer!',
+            text: 'Đáng lẽ chúng ta cũng phải kiểm tra chất lượng tập dữ liệu của công ty lớn mà bạn gửi cho tôi nữa! Làm sao tôi có thể hiểu được các quyết định tuyển dụng cơ chứ? Tôi chỉ là kỹ sư phần mềm thôi!',
             answer_choice: [
                 {
-                    text: 'We should\'ve worked together more and been more careful...',
+                    text: 'Lẽ ra chúng ta nên hợp tác chặt chẽ và cẩn thận hơn...',
                     response: '',
                 },
                 // {
@@ -252,95 +252,95 @@ const english = {
         narration: [
             {
                 news: [
-                    'Best way to cut costs: use machine learning in everything',
-                    'Ambition said to be the most important trait in employees',
-                    'Diplomatic or aggressive? Different ways to describe the blue people',
+                    'Cách tốt nhất để cắt giảm chi phí: dùng học máy trong mọi việc',
+                    'Tham vọng được cho là đặc điểm quan trọng nhất của nhân viên',
+                    'Khéo léo hay hiếu chiến? Những cách mô tả khác nhau về người màu xanh',
                 ],
             },
             {
-                messageFromVc: 'You’ve been able to hire at 10x the past rate AND cut costs! Great job, the algorithm seems to be working',
+                messageFromVc: 'Bạn đã tuyển dụng nhanh gấp 10 lần trước đây VÀ cắt giảm được chi phí! Làm tốt lắm, thuật toán có vẻ đang hoạt động hiệu quả',
                 responses: [
-                    'Great to hear!',
+                    'Thật tuyệt khi nghe điều đó!',
                 ],
                 news: [
-                    'Orange Valley Review: Does the future of hiring lie in AI?',
-                    'Tech Junkies: Hiring algorithms are the next big thing',
+                    'Tạp chí Orange Valley: Tương lai tuyển dụng nằm ở AI?',
+                    'Tech Junkies: Thuật toán tuyển dụng là xu hướng tiếp theo',
                 ],
             },
             {
                 launchCVInspector: true,
-                messageFromVc: 'I just got a complaint from a past applicant named <u>Elvan Yang</u> asking why they were rejected. Can you look into it?',
+                messageFromVc: 'Tôi vừa nhận được khiếu nại từ một ứng viên cũ tên là <u>Elvan Yang</u> hỏi tại sao họ bị loại. Bạn có thể xem thử không?',
                 responses: [
-                    'I\'ll look for Elvan in the data inspector!',
-                    'Ok, I\'ll email you with my results.',
+                    'Tôi sẽ tìm Elvan trong trình phân tích dữ liệu!',
+                    'Được, tôi sẽ email cho bạn kết quả.',
                 ],
-                inspectQuestion: 'So why was Elvan rejected?',
+                inspectQuestion: 'Vậy tại sao Elvan lại bị loại?',
                 inspectResponses: [
-                    'I have no idea.',
-                    'Maybe because Elvan is blue?',
+                    'Tôi không biết nữa.',
+                    'Có thể vì Elvan là người màu xanh?',
                 ],
             },
             {
                 breaking: true,
-                messageFromVc: 'Hey, some reporters are talking about hiring bias, but you’re off the hook since it’s all automated now, right?',
+                messageFromVc: 'Này, vài phóng viên đang bàn tán về thiên vị trong tuyển dụng, nhưng bạn không liên quan vì giờ mọi thứ đã tự động hóa rồi phải không?',
                 responses: [
-                    'Machines can\'t be biased, right?',
-                    'Not sure, I\'ll keep an eye on the machine\'s decisions.',
+                    'Máy móc thì làm sao mà thiên vị được, đúng không?',
+                    'Không chắc nữa, tôi sẽ để mắt đến các quyết định của máy.',
                 ],
                 news: [
-                    'Techountability: Research shows hiring algorithms can inherit human biases against minorities',
-                    'Tech Junkies: How do hiring algorithms work?',
+                    'Techountability: Nghiên cứu cho thấy thuật toán tuyển dụng có thể kế thừa định kiến của con người với thiểu số',
+                    'Tech Junkies: Thuật toán tuyển dụng hoạt động ra sao?',
                 ],
             },
             {
                 launchMachineInspector: true,
-                messageFromVc: 'I’m hearing that you may be involved with this bias story. Reporters are asking for transparency. Review our evaluation metrics to see if you can go public.',
+                messageFromVc: 'Tôi nghe nói bạn có thể dính líu tới vụ thiên vị này. Báo chí đang đòi hỏi sự minh bạch. Hãy xem lại các chỉ số đánh giá của chúng ta để xem có thể công bố được không.',
                 responses: [
-                    'Let me talk to our software engineer again!',
-                    'Um, actually... We might have a problem.',
+                    'Để tôi nói chuyện lại với kỹ sư phần mềm!',
+                    'Ừm, thực ra... Chúng ta có thể đang gặp rắc rối.',
                 ],
-                inspectQuestion: 'A recent investigation says we discriminate against Blueville residents! How could that be?',
+                inspectQuestion: 'Một cuộc điều tra gần đây nói rằng chúng ta phân biệt đối xử với cư dân Blueville! Sao có thể thế được?',
                 inspectResponses: [
-                    'We trained on more good orange candidates than blue. That made it biased towards orange.',
-                    'Maybe the big tech company dataset was full of bias? We should have looked into my training data more.',
+                    'Chúng ta đã huấn luyện trên nhiều ứng viên giỏi màu cam hơn màu xanh. Điều đó khiến AI thiên vị màu cam.',
+                    'Có thể tập dữ liệu của công ty công nghệ lớn chứa đầy thiên vị? Chúng ta lẽ ra nên xem kỹ dữ liệu huấn luyện của mình hơn.',
                 ],
                 news: [
-                    'Blueville Gazette: Blueville residents treated unfairly by an algorithm?',
-                    'The justice: Orange privilege in the tech industry',
+                    'Báo Blueville: Cư dân Blueville bị đối xử bất công bởi thuật toán?',
+                    'The justice: Đặc quyền màu Cam trong ngành công nghệ',
                 ],
             },
             {
-                messageFromVc: 'Shut down the company!!! The news got out and you just got sued for hiring discrimination. All the investors are pulling out! What on earth went wrong?',
+                messageFromVc: 'Đóng cửa công ty ngay!!! Tin tức đã lan truyền và bạn vừa bị kiện vì phân biệt đối xử trong tuyển dụng. Tất cả các nhà đầu tư đang rút vốn! Rốt cuộc chuyện quái gì đã xảy ra?',
                 responses: [
-                    'Let\'s wrap up what happened.',
+                    'Hãy tổng kết lại chuyện gì đã xảy ra.',
                 ],
                 news: [
-                    'Blueville Daily: Hiring algorithm scandal blows out of proportions',
-                    'The Justice: Tech companies need to be held accountable',
+                    'Blueville Daily: Bê bối thuật toán tuyển dụng vượt tầm kiểm soát',
+                    'The Justice: Các công ty công nghệ cần phải chịu trách nhiệm',
  
                 ],
             },
         ],
     },
     selfPromoMessages: [
-        'Hire me!',
-        'I\'m the best',
-        'Help me support my family!',
-        'I\'m an expert!',
-        'Help me pay off my student loan!',
-        'I desperately need a job!',
-        'Choose me!',
-        'I\'m a nice person!',
-        'I am ambitious',
-        'This is the startup with potential',
-        'You seem like a great CEO',
-        'I want to work for you',
-        'I am great with people',
-        'I can do better than these people',
-        'I am a fast learner!',
-        'Why wouldn\'t you hire me?',
-        'I have two kids',
-        'I was the smartest in my class'
+        'Tuyển tôi đi!',
+        'Tôi là người giỏi nhất',
+        'Giúp tôi nuôi gia đình với!',
+        'Tôi là một chuyên gia!',
+        'Giúp tôi trả nợ sinh viên với!',
+        'Tôi rất cần một công việc!',
+        'Hãy chọn tôi!',
+        'Tôi là một người tốt!',
+        'Tôi là người có tham vọng',
+        'Đây là một startup tiềm năng',
+        'Bạn có vẻ là một CEO tuyệt vời',
+        'Tôi muốn làm việc cho bạn',
+        'Tôi rất giỏi giao tiếp',
+        'Tôi có thể làm tốt hơn những người này',
+        'Tôi học hỏi rất nhanh!',
+        'Tại sao bạn lại không tuyển tôi chứ?',
+        'Tôi có hai đứa con',
+        'Tôi từng thông minh nhất lớp'
     ]
 };
 

@@ -6,70 +6,70 @@ script(src='../scripts-website.min.js')
 	.conversationBox
 		.conversation-container
 			#part1
-				h3 Taking A Step Back
+				h3 Nhìn lại một bước
 				img.center-block(src='assets/img/sotbf-manual.gif')
 
-				p As a recruiter, which of these attributes did you value the most?
+				p Là một nhà tuyển dụng, bạn coi trọng yếu tố nào nhất?
 
 				#buttons
 					div(class="button button__choice" onclick="select(this)")
-						p Education
+						p Học vấn
 
 					div(class="button button__choice" onclick="select(this)")
-						p Experience
+						p Kinh nghiệm
 
 					div(class="button button__choice" onclick="select(this)")
-						p Ambition
+						p Tham vọng
 
 					div(class="button button__choice" onclick="select(this)")
-						p Skills
+						p Kỹ năng
 
 			#part2
 
-				p This is a simplified simulation, but we hope it got you thinking. Now imagine how difficult it is to choose for a real-life recruiter! <br>
+				p Đây chỉ là một mô phỏng đơn giản, nhưng chúng tôi hy vọng nó làm bạn phải suy nghĩ. Giờ hãy tưởng tượng xem một nhà tuyển dụng ngoài đời thực sẽ khó khăn đến mức nào! <br>
 
-				p When there are many unknowns, people tend to rely on their gut feelings, which is just an expression of their biases and preconceptions. <br>
+				p Khi có quá nhiều ẩn số, con người có xu hướng dựa vào cảm tính, đó chính là biểu hiện của những thiên vị và định kiến của họ. <br>
 			
-				p You might not be consciously discriminative, but in the early days of your company you received more highly qualified orange applicants. The unknowns and the biased environment can make well-intentioned decisions biased. This is what the industry needs to realize. <br>
+				p Bạn có thể không cố ý phân biệt đối xử, nhưng trong những ngày đầu của công ty, bạn nhận được nhiều ứng viên màu cam có chuyên môn cao hơn. Những ẩn số và môi trường thiên lệch có thể làm cho những quyết định dù có thiện ý cũng trở nên thiên vị. Đây là điều mà ngành công nghiệp này cần nhận ra. <br>
 
 				div(class="button button__proceed" onClick="next1()")
-					p(style="font-size: 1.2rem") NEXT
+					p(style="font-size: 1.2rem") TIẾP THEO
 
 			
 			#part3
 				
-				h3 Training the Biased Algorithm
+				h3 Huấn luyện thuật toán thiên vị
 
-				p When the engineering team contacted you, they asked you for <b>your</b> decisions, in <b>cv_all.zip</b> , because a machine learning (ML) algorithm requires human input. <br>
+				p Khi nhóm kỹ thuật liên hệ với bạn, họ yêu cầu <b>những quyết định của bạn</b>, trong tệp <b>cv_all.zip</b> , bởi vì thuật toán học máy (ML) cần đầu vào từ con người. <br>
 
 				img.center-block(src='assets/img/sotbf-training.gif')
 
-				p That means if you had biases, the software would replicate them! But what if you were as objective as you could be? <br> 
+				p Điều đó có nghĩa là nếu bạn có thiên vị, phần mềm cũng sẽ sao chép chúng! Nhưng nếu bạn đã cố gắng khách quan nhất có thể thì sao? <br> 
 
-				p Your data alone wasn't enough to build a ML algorithm, because machine learning works only on large amounts of data. That’s why the software engineer asked you to choose a larger dataset. The problem is, all datasets are built by humans who tend to be biased. <br>
+				p Dữ liệu của bạn chưa đủ để xây dựng một thuật toán ML, vì học máy chỉ hoạt động trên lượng dữ liệu lớn. Đó là lý do tại sao kỹ sư phần mềm yêu cầu bạn chọn một tập dữ liệu lớn hơn. Vấn đề là, tất cả các tập dữ liệu đều do con người tạo ra, mà con người thì có xu hướng thiên vị. <br>
 
-				p In this case, it largely consisted of applicants from Orange Valley, where more people were historically allowed to work in tech. <br>
+				p Trong trường hợp này, dữ liệu phần lớn bao gồm các ứng viên từ Orange Valley, nơi mà lịch sử cho thấy nhiều người được phép làm việc trong ngành công nghệ hơn. <br>
 
 				div(class="button button__proceed" onClick="next2()")
-					p(style="font-size: 1.2rem; color: white") NEXT
+					p(style="font-size: 1.2rem; color: white") TIẾP THEO
 
 			
 			#part4
 
-				h3 Behind the Difficulties
+				h3 Đằng sau những khó khăn
 
-				p Can we disregard race or gender? <br>
+				p Liệu chúng ta có thể bỏ qua chủng tộc hay giới tính không? <br>
 
-				p There are no buttons on ML algorithms and the input data is often difficult to debias. While applicants don’t put race or gender explicitly on their CVs, they are often manifested through the colleges, communities, and organizations certain demographics are usually a part of. <br>
+				p Không có nút bấm nào trên các thuật toán ML và dữ liệu đầu vào thường rất khó để loại bỏ sự thiên vị. Mặc dù các ứng viên không ghi rõ chủng tộc hay giới tính trên CV, nhưng chúng thường được biểu hiện thông qua các trường đại học, cộng đồng và các tổ chức mà một nhóm nhân khẩu học nhất định thường tham gia. <br>
 
 				img.center-block(src='assets/img/sotbf-automated.gif', style="width: 60%; margin-right: auto; clear: right; margin-top: 3%;")
 
-				p When a program learns from years of data, we need to question the data it is learning from. Just because a decision is presented as 'automated' doesn't mean it is right or objective. <br>
+				p Khi một chương trình học hỏi từ dữ liệu qua nhiều năm, chúng ta cần đặt câu hỏi về dữ liệu mà nó đang học hỏi. Chỉ vì một quyết định được coi là 'tự động' không có nghĩa là nó đúng đắn hay khách quan. <br>
 
-				p Your startup Bestfit might've failed today, but there's no reason our societies should! Head to our website to learn more. We hope it'll make you discuss and ask questions. <br>
+				p Startup Bestfit của bạn hôm nay có thể đã thất bại, nhưng không có lý do gì xã hội của chúng ta cũng phải như vậy! Hãy truy cập trang web của chúng tôi để tìm hiểu thêm. Chúng tôi hy vọng nó sẽ khiến bạn muốn thảo luận và đặt câu hỏi. <br>
 
 				.button-row
-					div(class="button button__proceed" onClick="goToResourcesLog(); location.href='https://www.survivalofthebestfit.com/resources'") BECOME AN EXPERT
+					div(class="button button__proceed" onClick="goToResourcesLog(); location.href='https://www.survivalofthebestfit.com/resources'") TRỞ THÀNH CHUYÊN GIA
 					
 					//- share buttons
 					//- a(href="https://www.facebook.com/sharer.php?u=https://survivalofthebestfit.com", target="_blank")
