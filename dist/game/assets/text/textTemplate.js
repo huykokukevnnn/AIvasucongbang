@@ -264,7 +264,7 @@ const english = {
                 ],
                 news: [
                     'Tạp chí Orange Valley: Tương lai tuyển dụng nằm ở AI?',
-                    'Tech Junkies: Thuật toán tuyển dụng là xu hướng tiếp theo',
+                    'TÍN ĐỒ CÔNG NGHỆ: Thuật toán tuyển dụng là xu hướng tiếp theo',
                 ],
             },
             {
@@ -289,7 +289,7 @@ const english = {
                 ],
                 news: [
                     'Techountability: Nghiên cứu cho thấy thuật toán tuyển dụng có thể kế thừa định kiến của con người với thiểu số',
-                    'Tech Junkies: Thuật toán tuyển dụng hoạt động ra sao?',
+                    'TÍN ĐỒ CÔNG NGHỆ: Thuật toán tuyển dụng hoạt động ra sao?',
                 ],
             },
             {
