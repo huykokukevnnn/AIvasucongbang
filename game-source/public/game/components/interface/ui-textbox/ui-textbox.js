@@ -45,7 +45,7 @@ export default class extends UIBase {
         }
         const scoreText = this.displayScore ? dataModule._calculateScore().concat(' ') : '';
         // only show score feedback after completing stage one
-        const emailText = (this.stageNumber === 1 && !this.isRetry) ? 'Good job! '.concat(scoreText, this._mainContent) : this._mainContent;
+        const emailText = (this.stageNumber === 1 && !this.isRetry) ? ''.concat(scoreText, this._mainContent) : this._mainContent;
         this.$textEl.html(emailText);
         this.$subjectEl.html(this.subject);
 

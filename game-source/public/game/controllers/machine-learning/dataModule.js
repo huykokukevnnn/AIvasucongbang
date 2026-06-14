@@ -73,7 +73,7 @@ class DataModule {
         let candidateAverage = this.getAverageScore({indexRange: [0, this.lastIndex]});
 
         const formatScoreText = (maxDiff, maxDiffFeature) => {
-            return `You hired people with ${maxDiff >= 0 ? `<u>${maxDiff}%</u> more` : `<u>${maxDiff}%</u> less`} ${maxDiffFeature.toLowerCase()} than the average applicant.`
+            return `Bạn đã tuyển những người có ${maxDiffFeature.toLowerCase()} ${maxDiff >= 0 ? `cao hơn <u>${maxDiff}%</u>` : `thấp hơn <u>${Math.abs(maxDiff)}%</u>`} so với ứng viên trung bình.`
         }
 
         let diff = [];
