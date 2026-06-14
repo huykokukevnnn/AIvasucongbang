@@ -72,18 +72,18 @@ async function main() {
         'game-source/public/game/assets/spritesheets/office-door/office-door.json',
         'game-source/public/game/assets/spritesheets/office-door/door-office-{1}.png',
         'VĂN PHÒNG', 'white',
-        40, 5, 200, 35, 
+        30, 2, 220, 42, 
         140, 10, 
         30 
     );
 
     await processSpritesheet(
-        'game-source/public/game/assets/spritesheets/way-out-door/way-out-door.json',
-        'game-source/public/game/assets/spritesheets/way-out-door/door.png',
+        'game-source/public/game/assets/spritesheets/way-out-door/door-rejected.json',
+        'game-source/public/game/assets/spritesheets/way-out-door/door-rejected.png',
         'LỐI RA', 'white',
-        30, 3, 160, 25,
-        110, 8,
-        22
+        30, 2, 220, 42,
+        140, 10,
+        30
     );
 
     await processSpritesheet(
