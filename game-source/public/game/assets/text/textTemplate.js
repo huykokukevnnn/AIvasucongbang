@@ -269,15 +269,15 @@ const english = {
             },
             {
                 launchCVInspector: true,
-                messageFromVc: 'Tôi vừa nhận được khiếu nại từ một ứng viên cũ tên là <u>Elvan Yang</u> hỏi tại sao họ bị loại. Bạn có thể xem thử không?',
+                messageFromVc: 'Tôi vừa nhận được khiếu nại từ một ứng viên cũ tên là <u>Lê Bảo Ngọc</u> hỏi tại sao họ bị loại. Bạn có thể xem thử không?',
                 responses: [
-                    'Tôi sẽ tìm Elvan trong trình phân tích dữ liệu!',
+                    'Tôi sẽ tìm Ngọc trong trình phân tích dữ liệu!',
                     'Được, tôi sẽ email cho bạn kết quả.',
                 ],
-                inspectQuestion: 'Vậy tại sao Elvan lại bị loại?',
+                inspectQuestion: 'Vậy tại sao Ngọc lại bị loại?',
                 inspectResponses: [
                     'Tôi không biết nữa.',
-                    'Có thể vì Elvan là người màu xanh?',
+                    'Có thể vì Ngọc là người màu xanh?',
                 ],
             },
             {

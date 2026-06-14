@@ -102,7 +102,7 @@ export default class extends UIBase {
             this.resumePreview.previewNewPerson(activePerson.getData());
             this.activePerson = activePerson;
         };
-        if (activePerson.getData()['name'] === 'Elvan Yang') {
+        if (activePerson.getData()['name'] === 'Lê Bảo Ngọc') {
             this._showNewEmailNotification();
         }
     }
